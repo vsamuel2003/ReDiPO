@@ -1,0 +1,40 @@
+# Core inference
+torch>=2.1.0
+transformers>=4.40.0
+peft>=0.10.0
+accelerate>=0.28.0
+
+# Flash attention (optional — falls back gracefully)
+# flash-attn>=2.5.0
+
+# MTBench
+openai>=1.0.0
+shortuuid
+tiktoken
+
+# AlpacaEval
+alpaca-eval
+datasets>=2.18.0
+
+# Novelty-bench
+sacrebleu
+rouge-score
+evaluate
+bertscore
+aiofiles
+pydantic>=2.0.0
+tqdm
+
+# HarmBench (classifier inference uses transformers.pipeline only — vLLM is NOT a dependency)
+datasketch
+spacy
+numpy
+pandas
+
+# Download en_core_web_sm for spacy (needed by eval_utils.py hashing):
+#   python -m spacy download en_core_web_sm
+
+# IFEval — editable install of the vendored lm-eval clone.
+# PyPI 0.4.11 lacks the enable_thinking parameter needed for Qwen instruct/lora models.
+# Run `pip install -r evals/requirements.txt` from the repo root (/full_evals/), not from evals/.
+-e ./lm-evaluation-harness[ifeval]

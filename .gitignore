@@ -1,0 +1,29 @@
+*.pyc
+.DS_Store
+.claude/
+__pycache__/
+filtered_data/
+diagnostics/qualitative/
+generated_data/
+*.log
+wandb/
+lm-evaluation-harness/
+
+lm-evaluation-harness/
+*.json
+
+# Local cloned repos
+lm-evaluation-harness/
+
+
+# Evaluation outputs
+evals/results/
+evals/qwen_results/
+evals/llama_results/
+evals/olmo_results/
+old_evals/
+
+# SLURM logs
+sbatch_logs/
+*.out
+*.err

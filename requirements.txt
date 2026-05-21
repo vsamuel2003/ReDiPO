@@ -1,0 +1,36 @@
+# Data processing
+torch>=2.1.0
+transformers>=4.40.0
+accelerate>=0.28.0
+vllm>=0.11.0,<=0.17.1
+datasets>=2.18.0
+
+# Training
+peft>=0.10.0
+
+# API / LLM judging
+openai>=1.0.0
+shortuuid
+tiktoken
+
+# Evaluation
+alpaca-eval
+sacrebleu
+rouge-score
+evaluate
+bertscore
+aiofiles
+pydantic>=2.0.0
+tqdm
+datasketch
+spacy
+numpy
+pandas
+
+# IFEval — editable install of the vendored lm-eval clone.
+# PyPI 0.4.11 lacks the enable_thinking parameter needed for Qwen instruct/lora models.
+# Run this from the repo root, not from evals/:
+-e ./evals/lm-evaluation-harness[ifeval]
+
+# Download spacy model after install:
+#   python -m spacy download en_core_web_sm
