@@ -1,6 +1,6 @@
-# RECAPO: Recovering Coverage with Preference Optimization
+# ReDiPO: Recovering Distributional Diversity with Preference Optimization
 
-This repository contains the code and data pipeline for "RECAPO: Recovering Coverage with Preference Optimization" [UNDER REVIEW].
+This repository contains the code and data pipeline for "Recovering Diversity Without Losing Alignment: A DPO Recipe for Post-Trained LLMs" [UNDER REVIEW].
 
 ![Pipeline Overview](images/main_figure.png)
 
